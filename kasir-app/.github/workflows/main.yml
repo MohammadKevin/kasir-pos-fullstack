@@ -1,0 +1,32 @@
+name: Deploy NestJS to VPS
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Executing remote ssh commands using ssh key
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: root
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          command_timeout: 20m
+          script: |
+            cd /var/www/kasir-app
+            git reset --hard
+            git pull origin main
+            npm install
+            npx prisma migrate deploy
+            export NODE_OPTIONS="--max-old-space-size=512"
+            npm run build
+            pm2 reload kasir-backend || pm2 start dist/src/main.js --name "kasir-backend"
+            pm2 save

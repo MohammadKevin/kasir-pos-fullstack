@@ -1,0 +1,25 @@
+name: Deploy Frontend to VPS
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Build and Restart Next.js
+        run: |
+          cd /var/www/kasir-frontend
+          git reset --hard
+          git pull origin main
+          npm install
+          export NODE_OPTIONS="--max-old-space-size=1024"
+          npm run build
+          pm2 reload kasir-frontend || pm2 start npm --name "kasir-frontend" -- run start -- -p 3001
+          pm2 save
