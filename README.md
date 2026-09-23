@@ -18,11 +18,11 @@ A complete, production-grade Point of Sale (POS) and inventory management system
 ---
 
 ## ✨ Key Features
-- ⚡ **Real-time point of sale transactions and barcode scanner support**: Real-time point of sale transactions and barcode scanner support
-- ⚡ **Comprehensive inventory tracking, stock adjustments, and supplier management**: Comprehensive inventory tracking, stock adjustments, and supplier management
-- ⚡ **Cashier shift management, daily closing, and payment reconciliation**: Cashier shift management, daily closing, and payment reconciliation
-- ⚡ **Multi-store / multi-outlet support with granular role-based access control (RBAC)**: Multi-store / multi-outlet support with granular role-based access control (RBAC)
-- ⚡ **Interactive analytics dashboard with revenue charts and sales reporting (PDF/Excel)**: Interactive analytics dashboard with revenue charts and sales reporting (PDF/Excel)
+- Real-time point of sale transactions and barcode scanner support
+- Comprehensive inventory tracking, stock adjustments, and supplier management
+- Cashier shift management, daily closing, and payment reconciliation
+- Multi-store / multi-outlet support with granular role-based access control (RBAC)
+- Interactive analytics dashboard with revenue charts and sales reporting (PDF/Excel)
 
 ---
 
