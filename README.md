@@ -12,12 +12,12 @@
 
 ---
 
-## 📌 Overview
+## Overview
 A complete, production-grade Point of Sale (POS) and inventory management system designed for retail stores, minimarkets, and cafes. Built with a robust NestJS backend API and a high-performance Next.js frontend.
 
 ---
 
-## ✨ Key Features
+## Key Features
 - Real-time point of sale transactions and barcode scanner support
 - Comprehensive inventory tracking, stock adjustments, and supplier management
 - Cashier shift management, daily closing, and payment reconciliation
@@ -26,7 +26,7 @@ A complete, production-grade Point of Sale (POS) and inventory management system
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 - **Frontend**: Next.js 14, React, Tailwind CSS, Lucide Icons, React Hook Form
 - **Backend**: NestJS, TypeScript, Prisma ORM, JWT Authentication, Passport.js
 - **Database**: MySQL / PostgreSQL
@@ -34,7 +34,7 @@ A complete, production-grade Point of Sale (POS) and inventory management system
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 ```text
 kasir-pos-fullstack/
 ├── kasir-app/          # Backend API (NestJS, Prisma ORM)
@@ -52,7 +52,7 @@ kasir-pos-fullstack/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 Make sure you have the required runtimes and tools installed on your machine:
@@ -77,7 +77,7 @@ npm run dev
 
 ---
 
-## 👤 Author
+## Author
 **Mohammad Kevin Arif Rudianto**
 - **GitHub:** [@MohammadKevin](https://github.com/MohammadKevin)
 - **Portfolio:** [portfolio-mohammadkevin.vercel.app](https://portfolio-mohammadkevin.vercel.app)
@@ -86,9 +86,9 @@ npm run dev
 
 ---
 
-## 📄 License
+## License
 This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
 
 <div align="center">
-⭐️ If you found this repository useful, please consider giving it a star!
+If you found this repository useful, please consider giving it a star!
 </div>
